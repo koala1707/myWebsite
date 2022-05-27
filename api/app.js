@@ -14,6 +14,7 @@ var app = express()
 
 var surveyRouter = require('./routes/survey/survey');
 
+
 //use dev format for log
 app.use(logger('dev'))
 // to recognize the incoming Request Object as a json object

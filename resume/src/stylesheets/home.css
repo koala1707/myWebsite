@@ -1,0 +1,19 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.home-title {
+    display: flex;
+    justify-content: center;
+}
+
+.home-title p {
+    margin: 370px;
+    font-size: 100px;
+    font-family:"Gill Sans", sans-serif;
+    color: rgb(18, 89, 92);
+    font-weight: 500;
+    text-shadow: 2px 2px rgb(158, 247, 217);
+}
