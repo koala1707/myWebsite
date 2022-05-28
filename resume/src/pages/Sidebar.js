@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import '../stylesheets/sidebar.css'
 import {
     CDBSidebar,
@@ -14,19 +15,19 @@ const Sidebar = () => {
         <div className='wrapper'>
         <div className='sidebar-main'>
             <CDBSidebar className='cdbsidebar'>
-                <CDBSidebarHeader prefix={<i className='fa fa-bars fa-large'></i>}>
-                    <a href='/'>Menu</a>
+                <CDBSidebarHeader className='csbsider-header' prefix={<i className='fa fa-bars fa-large'></i>}>
+                    <p className='sidebar-menu'>Menu</p>
                 </CDBSidebarHeader>
 
                 <CDBSidebarContent className='csbsidebar-content'>
                     <CDBSidebarMenu>
-                        <NavLink to="/">
+                        <NavLink to="/me">
                             <CDBSidebarMenuItem icon='user'>About me</CDBSidebarMenuItem>
                         </NavLink>
-                        <NavLink to="/">
+                        <NavLink to="/portfolio">
                             <CDBSidebarMenuItem icon='book'>Portfolio</CDBSidebarMenuItem>
                         </NavLink>
-                        <NavLink to="/">
+                        <NavLink to="/contact">
                             <CDBSidebarMenuItem icon='envelope'>Contact</CDBSidebarMenuItem>
                         </NavLink>
                     </CDBSidebarMenu>

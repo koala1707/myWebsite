@@ -12,19 +12,42 @@
     position: absolute;
 }
 
-.cdbsidebar {
-    color: #fff;
-    background-color: #333;
+.csbsider-header {
+    height: 70px;
 }
 
-.cdbsidebar a {
-    text-decoration: none;
+.cdbsidebar {
+    /* color: #fff; */
+    /* background-color: rgb(1, 155, 1); */
+}
+
+.sidebar-menu {
     color: inherit;
+    margin: 0px;
+    /* text-decoration: none;
+    color: inherit;
+    text-align: center; */
 }
 
 .csbsidebar-header {
 
 }
+
+.csbsidebar-content {
+    margin: 0 0 10px 0px;
+}
+
+/* .csbsidebar-content p {
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+.csbsidebar-content button {
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+
+} */
 
 .cdbsidebar-footer {
     text-align: center;

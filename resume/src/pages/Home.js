@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import background from '../images/leaf-background.png'
 import '../stylesheets/home.css'
 import Sidebar from './Sidebar'
