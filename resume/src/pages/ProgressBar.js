@@ -2,6 +2,7 @@ import React from "react";
 import '../stylesheets/ProgressBar.css'
 
 
+
 const ProgressBar  = (props) => {
     const { percentage, skill, bgColor, level } = props;
 

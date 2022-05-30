@@ -50,7 +50,7 @@ function Myself() {
                     {abilityList.map((v, i) => (
                         <>
                         <p>{v.skill}</p>
-                        <ProgressBar className='progress-bar' key={i} percentage={percentage} bgColor={v.bgColor} level={v.level}/>
+                        <ProgressBar className='progress-bar' key={i} percentage={v.percentage} bgColor={v.bgColor} level={v.level}/>
                         </>
                     ))}
                 </div>
