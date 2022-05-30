@@ -17,7 +17,10 @@ function Home() {
         >
             <Sidebar/>
             <div className='home-title'>
-            <p>Erika Hosokawa</p>
+                <div className='vertical'/>
+                <div className='horizontal'>
+                    <p>Erika Hosokawa</p>
+                </div>
             </div>
         </div>
     )
