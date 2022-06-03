@@ -9,7 +9,7 @@
     padding-top: 30px;
     text-align: center;
     font-family:'Georgia';
-    font-size: 70px;
+    font-size: 6vw;
     letter-spacing: 8.6px;
 }
 
@@ -86,8 +86,8 @@
 
 .mysummary {
     font-size: 200px;
-    margin: 10px;
-    padding: 20px 0 0 10px;
+    /* margin: 50px; */
+    padding: 50px 0 0 10px;
 }
 
 
@@ -125,4 +125,46 @@
 
 .icon-size {
     font-size: 23px;
+}
+
+
+
+.home-button {
+    display: flex;
+    justify-content: center;
+}
+
+.home-button button {
+    width: 130px;
+    height: 55px;
+    border: none;
+    border-radius: 5%;
+    background-color: #bcff95;
+    font-family: monospace;
+    position:relative;
+    margin: 30px 0 0 600px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+.home-button button:hover {
+    background-color: #35b17f;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-8px);
+}
+
+.right-side button p {
+    font-size: 16px;
+    padding: 0 0px 0 0px;
+    position:relative;
+}
+
+.home-icon {
+    font-size: 200%;
+    position: absolute;
+    margin: 0px 0px 0 -50px;
+    /* margin-right: 500px; */
+    /* position: absolute; */
 }

@@ -9,16 +9,16 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {AiFillPhone}  from 'react-icons/ai'
 import {GrMapLocation} from 'react-icons/gr'
 import Titlebg from '../images/name-title1.png'
+import {useNavigate} from 'react-router-dom'
+import {FcHome} from 'react-icons/fc'
 
 // beginner, intermediate, advanced, expert
 function Myself() {
-    const [percentage, setPercentage]= useState(0);
-    const [skill, setSkill] = useState('');
-    const [bgColor, setBgColor] = useState('#ef6c00');
-    const [level, setLevel] = useState('')
-    useEffect(() => {
-        setInterval(() => setPercentage(0))
-    }, [])
+    const navigate = useNavigate();
+    const toHome = () => {
+        navigate('/')
+    }
+    
     const abilityList = [
         {percentage: 40, skill: 'ASP.NET', bgColor: 'rgb(129, 26, 197)', level: 'Experience'},
         {percentage: 35, skill: 'C++', bgColor: 'rgb(150, 199, 87)', level: 'Experience'},
@@ -41,42 +41,41 @@ function Myself() {
                     backgroundImage: `url(${Titlebg})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
-                    height: '20vh',
-                    width: '100vw',
+                    height: '28vh',
+                    width: '98vw',
                 }}
             >
-            <h1>Erika Hosokawa</h1>
-            <h5 className='sub-title'>Junior Software Engineer</h5>
+                <h1>Erika Hosokawa</h1>
+                <h5 className='sub-title'>Entry Software Engineer</h5>
             </div>
-        <div className="myself-home">
-            <div className='left-side'>
-                <img className='photo' src={Sample}/>
-                <h5>CONTACT</h5>
-                <p><HiOutlineMail className='icon-size'/> m3tpfbzr@gmail.com</p>
-                <p><GrMapLocation className='icon-size'/> Adelaide, SA Australia</p>
+            <div className="myself-home">
+                <div className='left-side'>
+                    <img className='photo' src={Sample}/>
+                    <h5>CONTACT</h5>
+                    <p><HiOutlineMail className='icon-size'/> m3tpfbzr@gmail.com</p>
+                    <p><GrMapLocation className='icon-size'/> Adelaide, SA Australia</p>
                 
-                <h5>EDUCATION</h5>
-                <p>University of South Australia</p>
-                <h6>Bachelor of Information Technology</h6>
-                <h6>(Software Development)</h6>
-                <h6>February 2020 - November 2022</h6>
+                    <h5>EDUCATION</h5>
+                    <p>University of South Australia</p>
+                    <h6>Bachelor of Information Technology</h6>
+                    <h6>(Software Development)</h6>
+                    <h6>February 2020 - November 2022</h6>
                 
-                <h5>SKILLS</h5>
-                <div className='skill-bar'>
-                    {abilityList.map((v, i) => (
+                    <h5>SKILLS</h5>
+                    <div className='skill-bar'>
+                        {abilityList.map((v, i) => (
                         <>
                         <p>{v.skill}</p>
                         <ProgressBar className='progress-bar' key={i} percentage={v.percentage} bgColor={v.bgColor} level={v.level}/>
                         </>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
 
-            <div className='right-side'>
-                <p className='mysummary'> Experienced an internship in IT industry with collaborating team work and excellent communication skills. Well developed ability to remain calm in stressful situations and mediate positive solutions. Creative and analytical problem solver. Patient, empathic, independent, and willing to learn new skills.
+                <div className='right-side'>
+                    <p className='mysummary'> Experienced an internship in IT industry with collaborating team work and excellent communication skills. Well developed ability to remain calm in stressful situations and mediate positive solutions. Creative and analytical problem solver. Patient, empathic, independent, and willing to learn new skills.
 AWS and Docker experience. Currently studying Bachelor of Information Technology, majoring in Software Development</p>
-                <h3>Work Experience</h3>
-                <div className='work-experience'>
+                    <h3>Work Experience</h3>
                     <h4>AI Travel<h7><GoCalendar className='icon-size'/> July 2022 ~ Current</h7></h4>
                     
                     <h5>Responsibilities</h5>
@@ -102,12 +101,14 @@ AWS and Docker experience. Currently studying Bachelor of Information Technology
                     <p>• Hiking</p>
                     <p>• Running</p>
                     <p>• Traveling</p>
+                    <div className='home-button'>
+                    <button onClick={toHome}><FcHome className='home-icon'/><p> HOME</p></button>
+                    </div>
                 </div>
                 
             <div>
-                
-            </div>
-            </div>
+        </div>
+        
         </div>
         </div>
     )
