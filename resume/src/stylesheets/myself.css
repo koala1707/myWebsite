@@ -2,6 +2,7 @@
 .myself-title {
     justify-content: center;
     display:inline;
+    z-index: 1;
 }
 
 .myself-title h1 {
@@ -12,7 +13,7 @@
     letter-spacing: 8.6px;
 }
 
-.myself-title h5 {
+.sub-title {
     padding: 10px 0 10px;
     text-align: center;
     font-style: italic;
@@ -24,15 +25,17 @@
     flex-direction: row;
 }
 
+
 .left-side {
     width: 25%;
-    background-color:rgb(196, 255, 211);
+    background-color:#f1f1f1;
 }
 
 .left-side img {
     display: flex;
     width: 50%;
     border-radius: 50%;
+    margin: 10px auto auto;
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -41,6 +44,8 @@
     letter-spacing: 4px;
     margin-top: 35px;
     font-weight: 600;
+    text-align: center;
+    font-family:'Georgia';
 }
 
 .left-side h6 {
@@ -63,85 +68,60 @@
 }
 
 .skill-bar p {
-    text-align:right;
-    margin-right: 280px;
-    margin-top: 10px;
-    margin-bottom: 0px;
     font-size: 18px;
+    display: flex;
+    margin: 0px 0 0px 10px;
+    text-align: center;
+
 }
-
-.progress-bar {
-}
-
-
 
 .right-side {
     width: 75%;
-    background-color: rgb(198, 253, 255);
+    background: linear-gradient(110deg, #b0fdca 60%, #fcd08e 60%);
+    font-family:'Georgia';
     /* justify-content:center; */
     /* position: relative; */
+    background-color: rgb(122, 196, 2);
 }
+
+.mysummary {
+    font-size: 200px;
+    margin: 10px;
+    padding: 20px 0 0 10px;
+}
+
 
 .right-side h3 {
-    /* justify-content: center; */
-    /* position: relative; */
-    /* top: 270px; */
-    /* left: 350px; */
-    /* margin: 270px 0 0 600px; */
-}
-.ai-travel {
-    /* margin: 300px; */
-    /* position: absolute; */
+    margin: 20px 0 10px 20px;
+    font-size: 33px;
+    text-decoration: underline;
 }
 
-.ai-travel h4 {
-    /* margin: 0px 0 0 0px; */
-    /* position: absolute; */
+
+.right-side h4 {
+    margin: 20px 3px 0 20px;
+    padding: 1px;
+    font-weight: 600;
 }
 
-.ai-travel date {
-    /* margin: 330px 0 0 150px; */
-    /* position: absolute; */
-}
-
-.ai-travel h5 {
-
-}
-
-/* .work-experience {
+.right-side h7 {
+    font-weight: 100;
+    font-size: 18px;
+    margin: 3px 0 0 8px;
     position: absolute;
-} */
-
-/* .work-experience h4 {
-    margin: 330px 0 0 400px;
-    position: absolute;
-} */
-
-/* .work-experience date {
-    margin: 330px 0 0 550px;
-    position: absolute;
-} */
-
-.responsibilities {
-    /* margin: 380px 0 0 400px; */
 }
 
-.responsibilities p {
-    /* margin: 20px 0 0 300px; */
+.right-side h5 {
+    margin: 8px 0px 0 20px;
+    font-size: 19px;
+    color:rgb(185, 136, 0);
+    font-weight: 600;
 }
 
-.achievement {
-
+.right-side p {
+    margin: 0px 0 0 30px;
+    font-size: 19px;
 }
-
-.work-experience p {
-
-}
-
-
-
-
-
 
 .icon-size {
     font-size: 23px;
