@@ -27,6 +27,7 @@ function Myself() {
         {percentage: 70, skill: 'JavaScript', bgColor: 'rgb(24, 158, 91)', level: 'Advanced'},
         {percentage: 55, skill: 'Python', bgColor: 'rgb(196, 183, 2)', level: 'Advanced'},
         {percentage: 60, skill: 'React', bgColor: 'rgb(24, 158, 91)', level: 'Advanced'},
+        {percentage: 55, skill: 'Node.js', bgColor: 'rgb(24, 158, 91)', level: 'Intermediate'},
         {percentage: 45, skill: 'AWS', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},
         {percentage: 35, skill: 'Docker', bgColor: 'rgb(196, 134, 0)', level: 'Some Experience'},
         {percentage: 55, skill: 'MySQL', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},

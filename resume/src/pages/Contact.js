@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../stylesheets/contact.css'
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'

@@ -14,7 +14,7 @@ const app = express()
 
 var surveyRouter = require('./routes/survey/survey');
 var surveyRouter = require('./routes/survey/contact');
-
+var surveyRouter = require('./routes/survey/github');
 
 //use dev format for log
 app.use(logger('dev'))
