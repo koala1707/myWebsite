@@ -1,0 +1,170 @@
+
+.myself-title {
+    justify-content: center;
+    display:inline;
+    z-index: 1;
+}
+
+.myself-title h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-family:'Georgia';
+    font-size: 6vw;
+    letter-spacing: 8.6px;
+}
+
+.sub-title {
+    padding: 10px 0 10px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Georgia';
+}
+
+.myself-home {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left-side {
+    width: 25%;
+    background-color:#f1f1f1;
+}
+
+.left-side img {
+    display: flex;
+    width: 50%;
+    border-radius: 50%;
+    margin: 10px auto auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.left-side h5 {
+    letter-spacing: 4px;
+    margin-top: 35px;
+    font-weight: 600;
+    text-align: center;
+    font-family:'Georgia';
+}
+
+.left-side h6 {
+    text-align: right;
+    margin-right: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.left-side p {
+    font-size: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.skill-bar {
+    width: 660px;
+    margin-bottom: 30px;
+}
+
+.skill-bar p {
+    font-size: 18px;
+    display: flex;
+    margin: 0px 0 0px 10px;
+    text-align: center;
+
+}
+
+.right-side {
+    width: 75%;
+    background: linear-gradient(115deg, #ffe8ce 15%,#ffcec2 25%,#f0daff 35%, #dddbff 45%, #e7fcfd 55%);
+    font-family:'Georgia';
+    /* justify-content:center; */
+    /* position: relative; */
+    background-color: rgb(122, 196, 2);
+}
+
+.mysummary {
+    font-size: 200px;
+    /* margin: 50px; */
+    padding: 50px 0 0 10px;
+}
+
+
+.right-side h3 {
+    margin: 20px 0 10px 20px;
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+
+.right-side h4 {
+    margin: 20px 3px 0 20px;
+    padding: 1px;
+    font-weight: 600;
+}
+
+.right-side h7 {
+    font-weight: 100;
+    font-size: 18px;
+    margin: 3px 0 0 8px;
+    position: absolute;
+}
+
+.right-side h5 {
+    margin: 8px 0px 0 20px;
+    font-size: 19px;
+    color:rgb(185, 136, 0);
+    font-weight: 600;
+}
+
+.right-side p {
+    margin: 0px 0 0 30px;
+    font-size: 19px;
+}
+
+.icon-size {
+    font-size: 23px;
+}
+
+
+
+.home-button {
+    display: flex;
+    justify-content: center;
+}
+
+.home-button button {
+    width: 130px;
+    height: 55px;
+    border: none;
+    border-radius: 5%;
+    background-color: #bcff95;
+    font-family: monospace;
+    position:relative;
+    margin: 30px 0 0 600px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+.home-button button:hover {
+    background-color: #35b17f;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-8px);
+}
+
+.right-side button p {
+    font-size: 16px;
+    padding: 0 0px 0 0px;
+    position:relative;
+}
+
+.home-icon {
+    font-size: 200%;
+    position: absolute;
+    margin: 0px 0px 0 -50px;
+    /* margin-right: 500px; */
+    /* position: absolute; */
+}

@@ -1,0 +1,42 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.home-title {
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.horizontal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(236, 236, 236);
+    width: 100vw;
+    margin: 400px 0 0 0;
+    height: 19vh;
+}
+
+.horizontal p {
+    position: inherit;
+    font-size: 8vw;
+    font-family:"Gill Sans", sans-serif;
+    /* color: #5A7850; */
+    color: #B2C699;
+    font-weight: 500;
+    /* text-shadow: 2px 2px #B2C699; */
+    text-shadow: 3.9px 5px #5A7850; 
+    margin-left: 300px;
+
+}
+
+.vertical {
+    position: absolute;
+    /* background-color: rgb(166, 255, 188); */
+    background-color: #57804A;
+    height: 100vh;
+    width: 15vw;
+    left: 300px;
+}
+

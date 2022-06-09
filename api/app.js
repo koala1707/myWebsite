@@ -1,18 +1,20 @@
 const express = require('express')
-var http = require('http')
+const http = require('http')
 const mysql = require('mysql')
-var bodyParser = require('body-parser')
-var path = require('path')
-var cookieParser = require('cookie-parser')
-var logger = require('morgan')
-var cors = require('cors')
-var app = express()
+const bodyParser = require('body-parser')
+const path = require('path')
+const cookieParser = require('cookie-parser')
+const logger = require('morgan')
+const cors = require('cors')
+const app = express()
 
 
 
 
 
 var surveyRouter = require('./routes/survey/survey');
+var surveyRouter = require('./routes/survey/contact');
+var surveyRouter = require('./routes/survey/github');
 
 //use dev format for log
 app.use(logger('dev'))
@@ -26,19 +28,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'resources')))
 
 
-//app.use(express.json());
-
 app.use('/', surveyRouter);
 
-// router.get("/hello", (req, res) => {
-//     knex.select('*').from('test')
-//     .then(data => res.send(data))
-// })
-
-
-// //httpProxy.createProxyServer({target:'http://localhost:8090'})
-// app.listen(8090, function() {
-//     console.log("running on port 8090")
-// })
 
 module.exports = app;

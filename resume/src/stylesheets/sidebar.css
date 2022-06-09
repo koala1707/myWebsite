@@ -1,0 +1,58 @@
+
+.wrapper {
+    
+}
+
+.sidebar-main {
+    display: flex;
+    height: '100vh';
+    overflow: scroll initial;
+    margin-top: 100px;
+    /* padding: 100px 0  0 300px; */
+    position: absolute;
+}
+
+.csbsider-header {
+    height: 70px;
+}
+
+.cdbsidebar {
+    /* color: #fff; */
+    /* background-color: rgb(1, 155, 1); */
+}
+
+.sidebar-menu {
+    color: inherit;
+    margin: 0px;
+    /* text-decoration: none;
+    color: inherit;
+    text-align: center; */
+}
+
+.csbsidebar-header {
+
+}
+
+.csbsidebar-content {
+    margin: 0 0 10px 0px;
+}
+
+/* .csbsidebar-content p {
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+.csbsidebar-content button {
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+
+} */
+
+.cdbsidebar-footer {
+    text-align: center;
+}
+
+.sidebar-btn-wrapper {
+    padding: 20px 5px;
+}
