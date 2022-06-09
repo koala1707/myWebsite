@@ -22,5 +22,6 @@ CREATE TABLE github (
 	title varchar(255) unique key NOT NULL,
 	description varchar(255) NOT NULL,
 	github_link varchar(255) NOT NULL,
-    github varchar(255) NOT NULL
+    image varchar(255) NOT NULL,
+    language varchar(255) NOT NULL,
 );
