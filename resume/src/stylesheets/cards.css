@@ -1,0 +1,52 @@
+
+.card {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgb(202, 199, 199);
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition:  200ms ease-in;
+    margin-top: 50px;
+}
+
+.card:hover {
+    transform: scale(1.1) ;
+}
+
+.card-image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    padding: 1rem;
+}
+
+.card-description {
+    padding: 0 1rem;
+}
+
+.card-button {
+    width: 230px;
+    height: 50px;
+    padding: 0;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px 0 10px 85px;
+    border: 2px solid rgb(130, 202, 88);
+    background: transparent;
+    color: rgb(130, 202, 88);
+    border-radius: 0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card-button:hover {
+    transform: scale(1.02);
+    background-color: rgb(130, 202, 88);
+    color: white;
+}
