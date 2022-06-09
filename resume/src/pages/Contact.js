@@ -33,18 +33,9 @@ function Contact() {
         },
         body: JSON.stringify({eMail})
         })
-        console.log("eMail: ", eMail)
-        // .then((res) => res.json())
-        // .then(() => {
-        //     setEMail({
-        //         company: "",
-        //         name: "",
-        //         email: "",
-        //         phone: "",
-        //         message: "",
-        //     })
-        // })
+        setEMail({company: "",name: "", email: "", phone: "",    message: ""})
         setSentEmail(true)
+        
     }
 
     const setTargetValue = (e) => {
@@ -61,17 +52,19 @@ function Contact() {
                 <form>
                 <label>Company</label>
                     <input type='text' placeholder='Company' name='company' value={eMail.company} onChange={setTargetValue}/>
-                    <label>Name</label>
+                    <label>*Name</label>
                     <input type='text' placeholder='Name' name='name' value={eMail.name} onChange={setTargetValue}/>
-                    <label>Email Address </label>
+                    <label>*Email Address </label>
                     <input type='text' placeholder='Email Address' name='email' value={eMail.email} onChange={setTargetValue}/>
                     <label>Phone Number</label>
                     <input type='text' placeholder='Phone Number' name='phone' value={eMail.phone} onChange={setTargetValue}/>
                     <label>Message</label>
                     <textarea className='message' name='message' value={eMail.message} onChange={setTargetValue}></textarea>
+                    <p>* Required</p>
                 </form>
+                
                 <button onClick={filledIn ? receiveEmail : ''}>Submit</button>
-                <div className='sent-email'>{sentEmail ? 'Sent your message' : ''}</div>
+                <div className='sent-email'>{sentEmail ? 'Sent your message. Thank you.' : ''}</div>
             </div>
         </div>
     )

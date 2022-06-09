@@ -11,6 +11,7 @@ function Portfolio() {
         fetch(`http://localhost:8090/repo/github-repo`)
         .then(res => res.json())
         .then(data =>  data.map((item, index) => {
+            // console.log("item: ", item)
             setRepoList(repoList => repoList.concat(item))
         }))
         setRepoList([])
