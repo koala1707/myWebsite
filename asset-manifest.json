@@ -1,0 +1,19 @@
+{
+  "main.css": "/myWebsite/static/css/main.ff2df64c.chunk.css",
+  "main.js": "/myWebsite/static/js/main.57251c45.chunk.js",
+  "main.js.map": "/myWebsite/static/js/main.57251c45.chunk.js.map",
+  "static/css/1.7d45cfe5.chunk.css": "/myWebsite/static/css/1.7d45cfe5.chunk.css",
+  "static/js/1.d58aaba5.chunk.js": "/myWebsite/static/js/1.d58aaba5.chunk.js",
+  "static/js/1.d58aaba5.chunk.js.map": "/myWebsite/static/js/1.d58aaba5.chunk.js.map",
+  "runtime~main.js": "/myWebsite/static/js/runtime~main.71b7148e.js",
+  "runtime~main.js.map": "/myWebsite/static/js/runtime~main.71b7148e.js.map",
+  "static/media/leaf-background.png": "/myWebsite/static/media/leaf-background.c40b2ea6.png",
+  "static/media/matt.jpg": "/myWebsite/static/media/matt.da226f4b.jpg",
+  "static/media/name-title1.png": "/myWebsite/static/media/name-title1.1f3e0dc8.png",
+  "static/media/all.min.css": "/myWebsite/static/media/fa-solid-900.37bc7099.svg",
+  "static/css/1.7d45cfe5.chunk.css.map": "/myWebsite/static/css/1.7d45cfe5.chunk.css.map",
+  "static/css/main.ff2df64c.chunk.css.map": "/myWebsite/static/css/main.ff2df64c.chunk.css.map",
+  "index.html": "/myWebsite/index.html",
+  "precache-manifest.eb127f81f4fb81ccb4455dd63f05b146.js": "/myWebsite/precache-manifest.eb127f81f4fb81ccb4455dd63f05b146.js",
+  "service-worker.js": "/myWebsite/service-worker.js"
+}
