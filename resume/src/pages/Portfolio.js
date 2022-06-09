@@ -2,6 +2,7 @@ import React from 'react';
 import Cards from './Cards'
 import {useEffect, useState} from 'react';
 import '../stylesheets/portfolio.css'
+// import photo from '../images/github'
 
 function Portfolio() {
     const [repoList, setRepoList] = useState([])
@@ -22,15 +23,15 @@ function Portfolio() {
         <div className='portfolio'>
             <div className='wrapper'>
                 {repoList.map((items, index) => (
-                    <>
-                        <Cards
+                    <div key={index}>
+                        <Cards 
                             img={items.image}
                             title={items.title}
                             language={items.language}
                             description={items.description}
                             button={items.github_link}
                         />
-                    </>
+                    </div>
                 ))}
             </div>
         </div>

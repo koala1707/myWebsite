@@ -9,7 +9,8 @@
     justify-content: space-between;
     cursor: pointer;
     transition:  200ms ease-in;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
     margin-bottom: 50px;
 }
 
@@ -21,12 +22,6 @@
     height: 12rem;
     width: 100%;
     object-fit: cover;
-}
-
-.card-title-lang {
-    /* display: flex; */
-    /* flex-direction: column; */
-
 }
 
 .card-title {
@@ -50,7 +45,7 @@
     font-family: inherit;
     font-weight: bold;
     font-size: 1rem;
-    margin: 10px 0 10px 85px;
+    margin: 10px 0 10px 70px;
     border: 2px solid rgb(130, 202, 88);
     background: transparent;
     color: rgb(130, 202, 88);

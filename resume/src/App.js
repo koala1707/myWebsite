@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import Main from './pages/Main';
+import React from 'react';
 import Home from './pages/Home'
 import Me from './pages/Myself'
 import Contact from './pages/Contact'
@@ -16,7 +15,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/test" element={<Main/>}/>
         <Route path="/" element={<Home/>}/>
         <Route path="/me" element={<Me/>}/>
         <Route path="/contact" element={<Contact/>}/>

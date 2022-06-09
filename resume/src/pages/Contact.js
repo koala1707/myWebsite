@@ -1,10 +1,8 @@
 import React from 'react';
 import '../stylesheets/contact.css'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
 
 function Contact() {
-    const navigate = useNavigate()
     const [eMail, setEMail] = useState({
         company: "",
         name: "",
@@ -17,7 +15,7 @@ function Contact() {
     const [filledIn, setFilledIn] = useState(false)
 
     useEffect(() => {
-        if(eMail.name == '' || eMail.email == ''){
+        if(eMail.name === '' || eMail.email === ''){
             setFilledIn(false)
         }
         else{

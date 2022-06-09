@@ -1,12 +1,8 @@
 import React from 'react';
 import '../stylesheets/myself.css'
-import { Line, Circle } from 'rc-progress'
 import ProgressBar from './ProgressBar';
-import {useEffect, useState} from 'react';
 import {GoCalendar} from 'react-icons/go'
-import Sample from '../images/matt.jpg'
 import {HiOutlineMail} from 'react-icons/hi'
-import {AiFillPhone}  from 'react-icons/ai'
 import {GrMapLocation} from 'react-icons/gr'
 import Titlebg from '../images/name-title1.png'
 import {useNavigate} from 'react-router-dom'
@@ -51,7 +47,6 @@ function Myself() {
             </div>
             <div className="myself-home">
                 <div className='left-side'>
-                    <img className='photo' src={Sample}/>
                     <h5>CONTACT</h5>
                     <p><HiOutlineMail className='icon-size'/> m3tpfbzr@gmail.com</p>
                     <p><GrMapLocation className='icon-size'/> Adelaide, SA Australia</p>
@@ -70,6 +65,9 @@ function Myself() {
                         <ProgressBar className='progress-bar' key={i} percentage={v.percentage} bgColor={v.bgColor} level={v.level}/>
                         </>
                         ))}
+                    </div>
+                    <div className='home-button'>
+                    <button onClick={toHome}><p> HOME</p></button>
                     </div>
                 </div>
 
@@ -102,9 +100,7 @@ AWS and Docker experience. Currently studying Bachelor of Information Technology
                     <p>• Hiking</p>
                     <p>• Running</p>
                     <p>• Traveling</p>
-                    <div className='home-button'>
-                    <button onClick={toHome}><FcHome className='home-icon'/><p> HOME</p></button>
-                    </div>
+                    
                 </div>
                 
             <div>
