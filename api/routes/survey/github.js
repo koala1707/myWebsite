@@ -3,6 +3,7 @@ var router = express.Router();
 const knex = require('../connection');
 
 router.get('/github-repo', function(req, res){
+    console.log("github")
     knex('github').then(data => res.send(JSON.stringify(data)))
 })
 

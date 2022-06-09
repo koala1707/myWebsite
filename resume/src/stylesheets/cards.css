@@ -22,12 +22,24 @@
     object-fit: cover;
 }
 
+.card-title-lang {
+    /* display: flex; */
+    /* flex-direction: column; */
+
+}
+
 .card-title {
     padding: 1rem;
+    margin: 0px 6px 0 0;
+    float: left;
+}
+
+.card-lang {
+    padding: 1.3rem;
 }
 
 .card-description {
-    padding: 0 1rem;
+    padding-left: 1rem;
 }
 
 .card-button {

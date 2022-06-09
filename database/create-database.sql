@@ -7,11 +7,11 @@ ALTER TABLE images ADD image varchar(255);
 DROP table if exists messages;
 CREATE TABLE messages (
     messages_id int primary key auto_increment,
-    company varchar(255) NOT NULL,
-    firstName varchar (255) NOT NULL,
-    lastName varchar (255) NOT NULL,
+    company varchar(255),
+    name varchar (255) NOT NULL,
     emalAddress varchar (255) NOT NULL,
-    phoneNumber int NOT NULL
+    phoneNumber int,
+    message varchar (255),
 );
 
 ALTER TABLE messages ADD comment varchar(255);

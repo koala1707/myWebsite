@@ -8,7 +8,7 @@ function Portfolio() {
 
     // const githubRepo = () => {
         useEffect(() => {
-        fetch(`http://localhost:8090/github-repo`)
+        fetch(`http://localhost:8090/repo/github-repo`)
         .then(res => res.json())
         .then(data =>  data.map((item, index) => {
             setRepoList(repoList => repoList.concat(item))
@@ -25,6 +25,7 @@ function Portfolio() {
                         <Cards
                             img={items.image}
                             title={items.title}
+                            language={items.language}
                             description={items.description}
                             button={items.github_link}
                         />

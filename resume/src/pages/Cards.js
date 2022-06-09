@@ -8,7 +8,8 @@ function Cards (props) {
             <div className='card'>
                 <div className='card-body'>
                     <img src={props.img} className='card-image'/>
-                    <h2 className='card-title'>{props.title}</h2>
+                        <h2 className='card-title'>{props.title}</h2>
+                        <h5 className='card-lang'>{props.language}</h5>
                     <p className='card-description'>{props.description}</p>
                 </div>
                 <a href={props.button}>

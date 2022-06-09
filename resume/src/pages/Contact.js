@@ -26,32 +26,25 @@ function Contact() {
     }, [eMail.name, eMail.email])
 
     const receiveEmail = () => {
-        // if(eMail.name == '' || eMail.email){
-        //     setSentEmail(false)
-        // }
-        // else{
-        //     setSentEmail(true)
-            fetch(`http://localhost:8090/contact`, {
-            method: 'POST',
-            headers: {
-                "Content-Type": 'application/json'
-            },
-            body: JSON.stringify({eMail})
-
-            })
-            .then((res) => res.json())
-            .then(() => {
-                setEMail({
-                    company: "",
-                    name: "",
-                    email: "",
-                    phone: "",
-                    message: "",
-                })
-            })
-            setSentEmail(true)
-        // }
-        // alert("Message has been sent.")
+        fetch(`http://localhost:8090/email/contact`, {
+        method: 'POST',
+        headers: {
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify({eMail})
+        })
+        console.log("eMail: ", eMail)
+        // .then((res) => res.json())
+        // .then(() => {
+        //     setEMail({
+        //         company: "",
+        //         name: "",
+        //         email: "",
+        //         phone: "",
+        //         message: "",
+        //     })
+        // })
+        setSentEmail(true)
     }
 
     const setTargetValue = (e) => {

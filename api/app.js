@@ -13,8 +13,8 @@ const app = express()
 
 
 var surveyRouter = require('./routes/survey/survey');
-var surveyRouter = require('./routes/survey/contact');
-var surveyRouter = require('./routes/survey/github');
+var emailRouter = require('./routes/survey/contact');
+var repoRouter = require('./routes/survey/github');
 
 //use dev format for log
 app.use(logger('dev'))
@@ -29,6 +29,8 @@ app.use(express.static(path.join(__dirname, 'resources')))
 
 
 app.use('/', surveyRouter);
+app.use('/email', emailRouter);
+app.use('/repo', repoRouter)
 
 
 module.exports = app;
