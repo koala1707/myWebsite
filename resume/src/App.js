@@ -14,8 +14,7 @@ import {
 
 function App() {
   return (
-    // <Router>
-    <HashRouter>
+    <Router>
       <Routes>
         <Route path="/test" element={<Main/>}/>
         <Route path="/" element={<Home/>}/>
@@ -23,8 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
       </Routes>
-    </HashRouter>
-    // </Router>
+    </Router>
   );
 }
 
