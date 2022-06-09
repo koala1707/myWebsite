@@ -14,13 +14,23 @@ function Contact() {
     })
 
     const [sentEmail, setSentEmail] = useState(false)
+    const [filledIn, setFilledIn] = useState(false)
 
-    const receiveEmail = () => {
-        if(eMail.name == '' || eMail.email){
-            setSentEmail(false)
+    useEffect(() => {
+        if(eMail.name == '' || eMail.email == ''){
+            setFilledIn(false)
         }
         else{
-            setSentEmail(true)
+            setFilledIn(true)
+        }
+    }, [eMail.name, eMail.email])
+
+    const receiveEmail = () => {
+        // if(eMail.name == '' || eMail.email){
+        //     setSentEmail(false)
+        // }
+        // else{
+        //     setSentEmail(true)
             fetch(`http://localhost:8090/contact`, {
             method: 'POST',
             headers: {
@@ -39,7 +49,8 @@ function Contact() {
                     message: "",
                 })
             })
-        }
+            setSentEmail(true)
+        // }
         // alert("Message has been sent.")
     }
 
@@ -66,8 +77,7 @@ function Contact() {
                     <label>Message</label>
                     <textarea className='message' name='message' value={eMail.message} onChange={setTargetValue}></textarea>
                 </form>
-                <div>{sentEmail}</div>
-                <button onClick={sentEmail ? receiveEmail : ''}>Submit</button>
+                <button onClick={filledIn ? receiveEmail : ''}>Submit</button>
                 <div className='sent-email'>{sentEmail ? 'Sent your message' : ''}</div>
             </div>
         </div>
