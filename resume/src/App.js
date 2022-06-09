@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import Main from './pages/Main';
 import Home from './pages/Home'
 import Me from './pages/Myself'
@@ -7,6 +6,7 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio';
 
 import {
+  HashRouter,
   BrowserRouter as Router,
   Routes,
   Route
@@ -14,7 +14,8 @@ import {
 
 function App() {
   return (
-    <Router>
+    // <Router>
+    <HashRouter>
       <Routes>
         <Route path="/test" element={<Main/>}/>
         <Route path="/" element={<Home/>}/>
@@ -22,7 +23,8 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
       </Routes>
-    </Router>
+    </HashRouter>
+    // </Router>
   );
 }
 
