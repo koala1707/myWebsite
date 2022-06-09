@@ -6,8 +6,8 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio';
 
 import {
-  // BrowserRouter as Router,
-  HashRouter as Router,
+  BrowserRouter as Router,
+  // HashRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
