@@ -1,10 +1,20 @@
 {
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/koala1707/myWebsite.git"
-    },
-    "scripts": {
-        "start": "cd api && npm start",
-        "start-frontend": "cd resume && npm start"
-    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koala1707/myWebsite.git"
+  },
+  "scripts": {
+    "start": "cd api && npm start",
+    "start-frontend": "cd resume && npm start"
+  },
+  "name": "mywebsite",
+  "bugs": {
+    "url": "https://github.com/koala1707/myWebsite/issues"
+  },
+  "homepage": "https://github.com/koala1707/myWebsite#readme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
