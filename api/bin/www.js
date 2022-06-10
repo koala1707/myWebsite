@@ -3,25 +3,14 @@ var http = require('http');
 
 
 // Get port and store in Express.
-var port = normalisePort(process.env.PORT || '8090');
+var port = ('8090')
 app.set('port', port);
 
 // Create HTTP server.
 var server = http.createServer(app);
 
 // Listen on provided port, on all network interfaces
-server.listen(port);
-
-// Normalise a port into number, string or false.
-function normalisePort(val) {
-    var port = parseInt(val, 10);
-    if (isNaN(port)) {
-        // named pipe
-        return val;
-    }
-    if (port >= 0) {
-        // port number
-        return port;
-    }
-    return false;
-}
+// server.listen(port);
+server.listen(process.env.PORT || 8090, function() {
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
+})
