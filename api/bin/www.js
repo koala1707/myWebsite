@@ -3,7 +3,7 @@ var http = require('http');
 
 
 // Get port and store in Express.
-var port = (process.env.PORT)
+var port = (process.env.PORT || 8090)
 app.set('port', port);
 
 // Create HTTP server.

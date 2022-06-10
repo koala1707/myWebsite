@@ -24,7 +24,7 @@ function Contact() {
     }, [eMail.name, eMail.email])
 
     const receiveEmail = () => {
-        fetch(`http://localhost:8090/email/contact`, {
+        fetch(`/email/contact`, {
         method: 'POST',
         headers: {
             "Content-Type": 'application/json'
