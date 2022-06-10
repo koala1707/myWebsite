@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "start": "cd api && npm start",
+        "start-frontend": "cd resume && npm start"
+    }
+}
