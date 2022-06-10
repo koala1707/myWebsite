@@ -7,7 +7,6 @@ import '../stylesheets/portfolio.css'
 function Portfolio() {
     const [repoList, setRepoList] = useState([])
 
-    // const githubRepo = () => {
         useEffect(() => {
         fetch(`http://localhost:8090/repo/github-repo`)
         .then(res => res.json())
@@ -16,7 +15,6 @@ function Portfolio() {
             setRepoList(repoList => repoList.concat(item))
         }))
         setRepoList([])
-    // }
     },[])
 
     return (
