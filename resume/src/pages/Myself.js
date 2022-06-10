@@ -7,6 +7,8 @@ import {GrMapLocation} from 'react-icons/gr'
 import Titlebg from '../images/name-title1.png'
 import {useNavigate} from 'react-router-dom'
 import {FcHome} from 'react-icons/fc'
+import {BsLinkedin} from 'react-icons/bs'
+import {BsGithub} from 'react-icons/bs'
 
 // beginner, intermediate, advanced, expert
 function Myself() {
@@ -25,7 +27,7 @@ function Myself() {
         {percentage: 60, skill: 'React', bgColor: 'rgb(24, 158, 91)', level: 'Advanced'},
         {percentage: 55, skill: 'Node.js', bgColor: 'rgb(24, 158, 91)', level: 'Intermediate'},
         {percentage: 45, skill: 'AWS', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},
-        {percentage: 35, skill: 'Docker', bgColor: 'rgb(196, 134, 0)', level: 'Some Experience'},
+        {percentage: 35, skill: 'Docker', bgColor: 'rgb(196, 134, 0)', level: 'Experience'},
         {percentage: 55, skill: 'MySQL', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},
         {percentage: 55, skill: 'SQL Server', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},
         
@@ -50,6 +52,10 @@ function Myself() {
                     <h5>CONTACT</h5>
                     <p><HiOutlineMail className='icon-size'/> m3tpfbzr@gmail.com</p>
                     <p><GrMapLocation className='icon-size'/> Adelaide, SA Australia</p>
+                    <div className='external-links'>
+                    <a href='https://www.linkedin.com/in/erika-hosokawa-7024341a2/'><BsLinkedin className='external-link'/></a>
+                    <a href='https://github.com/koala1707'><BsGithub className='external-link'/></a>
+                    </div>
                 
                     <h5>EDUCATION</h5>
                     <p>University of South Australia</p>

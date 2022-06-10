@@ -27,9 +27,9 @@ const Sidebar = () => {
                         <NavLink to="/portfolio">
                             <CDBSidebarMenuItem icon='book'>Portfolio</CDBSidebarMenuItem>
                         </NavLink>
-                        <NavLink to="/contact">
+                        {/* <NavLink to="/contact">
                             <CDBSidebarMenuItem icon='envelope'>Contact</CDBSidebarMenuItem>
-                        </NavLink>
+                        </NavLink> */}
                     </CDBSidebarMenu>
                 </CDBSidebarContent>
 

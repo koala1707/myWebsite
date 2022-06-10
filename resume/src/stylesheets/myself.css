@@ -62,6 +62,18 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.external-links {
+    display: flex;
+    justify-content: center;
+}
+
+.left-side a {
+    font-size: 30px;
+    color: #35b18c;
+    padding-left: 20px;
+}
+
+
 .skill-bar {
     width: 660px;
     margin-bottom: 30px;
