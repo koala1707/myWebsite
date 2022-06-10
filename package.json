@@ -4,7 +4,7 @@
     "url": "git+https://github.com/koala1707/myWebsite.git"
   },
   "scripts": {
-    "start": "cd api && node ./bin/www",
+    "start": "cd api && node ./bin/www.js",
     "start-frontend": "cd resume && npm start"
   },
   "name": "mywebsite",
