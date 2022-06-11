@@ -8,10 +8,6 @@ const logger = require('morgan')
 const cors = require('cors')
 const app = express()
 
-
-
-
-
 var surveyRouter = require('./routes/survey/survey');
 var emailRouter = require('./routes/survey/contact');
 var repoRouter = require('./routes/survey/github');

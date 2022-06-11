@@ -19,12 +19,12 @@ const contactEmail = nodemailer.createTransport({
     }
 });
 
-contactEmail.verify((error, success) => {
-    error ? console.log("error: ", error) : console.log(`Server is ready ${success}`)
-})
+// contactEmail.verify((error, success) => {
+//     error ? console.log("error: ", error) : console.log(`Server is ready ${success}`)
+// })
 
 router.post("/contact", function(req, res) {
-    console.log("req: ", req.body.eMail.company);
+    // console.log("req: ", req.body.eMail.company);
     const company = req.body.eMail.company;
     const name = req.body.eMail.name;
     const email = req.body.eMail.email;
@@ -43,7 +43,7 @@ router.post("/contact", function(req, res) {
         text: `${message} \nemail: ${email}, phone: ${phone}`
     }
     contactEmail.sendMail(mail, function(error) {
-        error ? console.log("Error: ", error) : console.log("Success")
+        // error ? console.log("Error: ", error) : console.log("Success")
         res.json({status: "Email sent"})
     })
 })
