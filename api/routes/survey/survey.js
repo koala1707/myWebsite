@@ -6,7 +6,7 @@ const knex = require('../connection');
 //const env = dotenv.config().parsed
 //const knex = require('knex')
 
-router.get('/test', function(req, res){
+router.get('/', function(req, res){
     knex('test').then(data => res.send(JSON.stringify(data)))
 })
 

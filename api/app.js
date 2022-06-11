@@ -12,7 +12,7 @@ const app = express()
 
 
 
-// var surveyRouter = require('./routes/survey/survey');
+var surveyRouter = require('./routes/survey/survey');
 var emailRouter = require('./routes/survey/contact');
 var repoRouter = require('./routes/survey/github');
 
@@ -27,7 +27,7 @@ app.use(cookieParser());
 // serves static files (__dirname: returns the path of the folder where the current js file resides.)
 app.use(express.static(path.join(__dirname, 'resources')))
 
-// app.use('/', surveyRouter);
+app.use('/', surveyRouter);
 app.use('/email', emailRouter);
 app.use('/repo', repoRouter)
 
