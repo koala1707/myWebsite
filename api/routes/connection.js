@@ -8,7 +8,7 @@ var knex = require('knex')({
         password: process.env.DB_PASSWORD,
         host: process.env.DB_HOST,
         database: 'PedQLSurveyDatabase',
-        socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+        socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock.lock'
     }
 });
 
