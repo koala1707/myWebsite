@@ -11,11 +11,11 @@ const contactEmail = nodemailer.createTransport({
     rejectUnautorised: false,
     auth: {
         type:"OAuth2",
-        user: env.EMAIL_USER,
-        pass: env.EMAIL_PASSWORD,
-        clientId: env.GMAIL_ClientID,
-        clientSecret: env.GMAIL_ClientSecret,
-        refreshToken: env.GMAIL_RefreshToken,
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
+        clientId: process.env.GMAIL_ClientID,
+        clientSecret: process.env.GMAIL_ClientSecret,
+        refreshToken: process.env.GMAIL_RefreshToken,
     }
 });
 
