@@ -4,9 +4,9 @@ const env = dotenv.config().parsed
 var knex = require('knex')({
     client: 'mysql',
     connection: {
-        user: env.DB_USER,
-        password: env.DB_PASSWORD,
-        host: env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        host: process.env.DB_HOST,
         database: 'PedQLSurveyDatabase'
     }
 });
