@@ -33,7 +33,7 @@ app.use('/email', emailRouter);
 app.use('/repo', repoRouter)
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'resume', 'build', 'index.html'));
+    res.sendFile(resolve(__dirname, 'resume', 'build', 'index.html'));
 });
 
 
