@@ -28,4 +28,9 @@ app.use('/email', emailRouter);
 app.use('/', repoRouter)
 
 
+app.get('/', (req, res) => {
+    console.log("modify error '/'")
+})
+
+
 module.exports = app;
