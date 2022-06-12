@@ -30,10 +30,4 @@ app.use(timeout('30s'))
 app.use('/email', emailRouter);
 app.use('/', repoRouter)
 
-
-app.get('/', (req, res) => {
-    console.log("db_url: ", process.env.DB_URL)
-})
-
-
 module.exports = app;

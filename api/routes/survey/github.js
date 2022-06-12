@@ -7,5 +7,9 @@ router.get('/github-repo', function(req, res){
     knex('github').then(data => res.send(JSON.stringify(data)))
 })
 
+router.get('/', function (req, res){
+    console.log('/ error ')
+})
+
 
 module.exports = router;
