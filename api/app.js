@@ -13,6 +13,7 @@ var surveyRouter = require('./routes/survey/survey');
 var emailRouter = require('./routes/survey/contact');
 var repoRouter = require('./routes/survey/github');
 
+app.use(timeout('30s'))
 //use dev format for log
 app.use(logger('dev'))
 // to recognize the incoming Request Object as a json object
@@ -24,10 +25,12 @@ app.use(cookieParser());
 // serves static files (__dirname: returns the path of the folder where the current js file resides.)
 app.use(express.static(path.join(__dirname, 'resources')))
 
-app.use(timeout('30s'))
+
 
 // app.use('/', surveyRouter);
 app.use('/email', emailRouter);
 app.use('/', repoRouter)
+
+
 
 module.exports = app;
