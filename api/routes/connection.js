@@ -1,5 +1,7 @@
 const dotenv = require('dotenv');
 const env = dotenv.config().parsed
+const { Pool } = require('pg')
+
 
 // var knex = require('knex')({
 //     client: 'mysql',
@@ -17,21 +19,15 @@ var knex = require('knex')({
         connectionString: process.env.DB_URL,
         ssl: {rejectUnauthorized: false},
     },
-    // connection: {
-    //     user: process.env.DB_USER,
-    //     password: process.env.DB_PASSWORD,
-    //     host: process.env.DB_HOST,
-    //     database: process.env.DB_NAME
-    // },
-    
-    // pool: {
-    //     min: 2,
-    //     max: 10,
-    // },
-    // migrations: {
-    //     tableName: '',
-    // },
 });
+
+// var knex = new Pool({
+//     // client: 'pg',
+//     // connection: {
+//         connectionString: process.env.DB_URL,
+//         ssl: {rejectUnauthorized: false},
+//     // },
+// });
 
 
 

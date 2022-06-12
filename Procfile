@@ -1,1 +1,0 @@
-web: cd api && node ./bin/www.js
