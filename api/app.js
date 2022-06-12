@@ -31,6 +31,9 @@ app.use(express.static(path.join(__dirname, 'resources')))
 app.use('/email', emailRouter);
 app.use('/repo', repoRouter)
 
-
+app.get('/', function(req, res) {
+    res.status(200);
+    res.send('slash command')
+})
 
 module.exports = app;

@@ -16,7 +16,7 @@ const { Pool } = require('pg')
 var knex = require('knex')({
     client: 'pg',
     connection: {
-        connectionString: process.env.DB_URL,
+        connectionString: process.env.DATABASE_URL,
         ssl: {rejectUnauthorized: false},
     },
 });
