@@ -8,7 +8,7 @@ function Portfolio() {
     const [repoList, setRepoList] = useState([])
 
         useEffect(() => {
-        fetch(`/repo/github-repo`)
+        fetch(`/github-repo`)
         .then(res => res.json())
         .then(data =>  data.map((item, index) => {
             // console.log("item: ", item)

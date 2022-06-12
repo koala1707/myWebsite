@@ -7,7 +7,7 @@ const knex = require('../connection');
 //const knex = require('knex')
 
 router.get('/test', function(req, res){
-    knex('test').then(data => res.send(JSON.stringify(data)))
+    knex('github').then(data => res.send(JSON.stringify(data)))
 })
 
 
