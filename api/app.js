@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cookieParser());
 // serves static files (__dirname: returns the path of the folder where the current js file resides.)
 app.use(express.static(path.join(__dirname, 'resources')))
+app.use(express.static('resume/build'))
 
 
 
