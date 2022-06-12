@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd api && node ./bin/www.js",
-    "build": "grunt dist",
-    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
+    "start": "cd api && node ./bin/www.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/koala1707/myWebsite/issues"
   },
-  "homepage": "https://github.com/koala1707/myWebsite#readme",
-  "dependencies": {
-    "bower": "^1.8.14",
-    "grunt": "^1.5.3"
-  }
+  "homepage": "https://github.com/koala1707/myWebsite#readme"
 }
