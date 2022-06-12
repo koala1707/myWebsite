@@ -1,0 +1,1 @@
+Web: knex migrate:rollback && node ./bin/www.js

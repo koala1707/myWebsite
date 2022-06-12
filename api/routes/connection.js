@@ -12,13 +12,18 @@ const env = dotenv.config().parsed
 // });
 
 var knex = require('knex')({
-    client: 'postgresql',
+    client: 'pg',
     connection: {
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        host: process.env.DB_HOST,
-        database: process.env.DB_NAME
+        connectionString: process.env.DB_URL,
+        ssl: {rejectUnauthorized: false},
     },
+    // connection: {
+    //     user: process.env.DB_USER,
+    //     password: process.env.DB_PASSWORD,
+    //     host: process.env.DB_HOST,
+    //     database: process.env.DB_NAME
+    // },
+    
     // pool: {
     //     min: 2,
     //     max: 10,
