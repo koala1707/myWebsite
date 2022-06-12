@@ -1,1 +1,1 @@
-Web: knex migrate:rollback && node ./bin/www.js
+web: cd api && node ./bin/www.js
