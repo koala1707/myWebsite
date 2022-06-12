@@ -6,6 +6,7 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const cors = require('cors')
+const timeout = require('connect-timeout')
 const app = express()
 
 var surveyRouter = require('./routes/survey/survey');
@@ -22,6 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cookieParser());
 // serves static files (__dirname: returns the path of the folder where the current js file resides.)
 app.use(express.static(path.join(__dirname, 'resources')))
+
+app.use(timeout('30s'))
 
 // app.use('/', surveyRouter);
 app.use('/email', emailRouter);
