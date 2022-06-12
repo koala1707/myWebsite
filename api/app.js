@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'resources')))
 
 // app.use('/', surveyRouter);
 app.use('/email', emailRouter);
-app.use('/', repoRouter)
+app.use('/repo', repoRouter)
 
 
 
