@@ -8,8 +8,6 @@ const logger = require('morgan')
 const cors = require('cors')
 const timeout = require('connect-timeout')
 const app = express()
-const dotenv = require('dotenv');
-const env = dotenv.config().parsed
 
 var surveyRouter = require('./routes/survey/survey');
 var emailRouter = require('./routes/survey/contact');
