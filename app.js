@@ -32,9 +32,9 @@ app.use(cookieParser());
 app.use('/email', emailRouter);
 app.use('/repo', repoRouter)
 
-app.use(express.static('resume/build'))
+// app.use(express.static('resume/build'))
 app.get('/', (req, res) => {
-    const index = path.join(__dirname, 'resume', 'public', 'index.html');
+    const index = path.join(__dirname, 'resume', 'build', 'index.html');
     res.sendFile(index);
 });
 
