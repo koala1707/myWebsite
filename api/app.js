@@ -23,8 +23,8 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cookieParser());
 // serves static files (__dirname: returns the path of the folder where the current js file resides.)
-app.use(express.static(path.join(__dirname, 'resources')))
-app.use(express.static('resume/build'))
+// app.use(express.static(path.join(__dirname, 'resources')))
+
 
 
 
@@ -32,9 +32,11 @@ app.use(express.static('resume/build'))
 app.use('/email', emailRouter);
 app.use('/repo', repoRouter)
 
+app.use(express.static('resume/build'))
 app.get('*', (req, res) => {
+    
     console.log("__dirname: ", __dirname)
-    res.sendFile(__dirname, 'resume', 'build', 'index.html');
+    res.sendFile('resume', 'build', 'index.html');
 });
 
 
