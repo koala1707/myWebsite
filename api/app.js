@@ -34,8 +34,9 @@ app.use('/repo', repoRouter)
 
 app.use(express.static('resume/build'))
 app.get('*', (req, res) => {
-    
+    console.log(". = %s", path.resolve("."));
     console.log("__dirname: ", __dirname)
+    console.log("__dirname = %s", path.resolve(__dirname));
     res.sendFile('index.html',{root: '../resume/build/'});
 });
 
