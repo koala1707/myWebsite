@@ -1,19 +1,30 @@
 {
-  "name": "mywebsite",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "cd api && node ./bin/www.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koala1707/myWebsite.git"
+    "start": "node ./bin/www",
+    "devStart": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/koala1707/myWebsite/issues"
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "connect-timeout": "^1.9.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "knex": "^2.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.5",
+    "pg": "^8.7.3",
+    "socket.io": "^4.5.1"
   },
-  "homepage": "https://github.com/koala1707/myWebsite#readme"
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
