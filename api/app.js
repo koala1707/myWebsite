@@ -36,7 +36,7 @@ app.use(express.static('resume/build'))
 app.get('*', (req, res) => {
     
     console.log("__dirname: ", __dirname)
-    res.sendFile('index.html',{root: '.../resume/build/'});
+    res.sendFile('index.html',{root: '../resume/build/'});
 });
 
 
