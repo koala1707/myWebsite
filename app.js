@@ -34,7 +34,7 @@ app.use('/repo', repoRouter)
 
 // app.use(express.static('resume/build'))
 app.get('/', (req, res) => {
-    const index = path.join(__dirname, 'resume', 'build', 'index.html');
+    const index = path.join(__dirname, 'src', 'App.js');
     res.sendFile(index);
 });
 
