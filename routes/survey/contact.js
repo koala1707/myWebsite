@@ -19,9 +19,9 @@ const contactEmail = nodemailer.createTransport({
     }
 });
 
-// contactEmail.verify((error, success) => {
-//     error ? console.log("error: ", error) : console.log(`Server is ready ${success}`)
-// })
+contactEmail.verify((error, success) => {
+    error ? console.log("error: ", error) : console.log(`Server is ready ${success}`)
+})
 
 router.post("/contact", function(req, res) {
     // console.log("req: ", req.body.eMail.company);
@@ -31,6 +31,7 @@ router.post("/contact", function(req, res) {
     const phone = req.body.eMail.phone;
     const message = req.body.eMail.message;
 
+    
     // knex.transaction(async trx => {
     //     const data = await knex('messages').transacting(trx).insert({company: company, name: name, emailAddress: email, phoneNumber: phone, message: message}).transacting(trx)
     // })
@@ -43,7 +44,7 @@ router.post("/contact", function(req, res) {
         text: `${message} \nemail: ${email}, phone: ${phone}`
     }
     contactEmail.sendMail(mail, function(error) {
-        // error ? console.log("Error: ", error) : console.log("Success")
+        error ? console.log("Error: ", error) : console.log("Success")
         res.json({status: "Email sent"})
     })
 })

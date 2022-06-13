@@ -11,8 +11,8 @@ function Contact() {
         message: "",
     })
 
-    const [sentEmail, setSentEmail] = useState(false)
-    const [filledIn, setFilledIn] = useState(false)
+    const [sentEmail, setSentEmail] = useState()
+    const [filledIn, setFilledIn] = useState()
 
     useEffect(() => {
         if(eMail.name === '' || eMail.email === ''){
