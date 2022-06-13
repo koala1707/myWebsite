@@ -38,7 +38,7 @@ router.post("/contact", function(req, res) {
 
     const mail = {
         from: `${name} at ${company}`,
-        to: env.EMAIL_USER,
+        to: process.env.EMAIL_USER,
         subject: `Message from: ${name}`,
         text: `${message} \nemail: ${email}, phone: ${phone}`
     }
