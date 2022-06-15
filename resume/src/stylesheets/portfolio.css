@@ -1,11 +1,8 @@
 
 .portfolio {
     background: linear-gradient(rgba(190, 253, 199, 0.897) 40%,rgba(111, 170, 120, 0.904) 100%,transparent);
-    /* background-color: rgba(111, 170, 120, 0.904); */
     width: 100%;
     min-height: 100vh;
-    /* top: 0; */
-    /* left: 0; */
 }
 
 

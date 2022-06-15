@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const knex = require('../connection');
+const knex = require('./connection');
 const nodemailer = require('nodemailer')
 const dotenv = require('dotenv');
 const env = dotenv.config().parsed

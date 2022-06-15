@@ -6,32 +6,28 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {GrMapLocation} from 'react-icons/gr'
 import Titlebg from '../images/name-title1.png'
 import {useNavigate} from 'react-router-dom'
-import {FcHome} from 'react-icons/fc'
 import {BsLinkedin} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
+import {useEffect, useState} from 'react';
 
-// beginner, intermediate, advanced, expert
 function Myself() {
     const navigate = useNavigate();
+    const [skillList, setSkillList] = useState([])
     const toHome = () => {
         navigate('/')
     }
     
-    const abilityList = [
-        {percentage: 40, skill: 'ASP.NET', bgColor: 'rgb(129, 26, 197)', level: 'Experience'},
-        {percentage: 35, skill: 'C++', bgColor: 'rgb(150, 199, 87)', level: 'Experience'},
-        {percentage: 65, skill: 'CSS', bgColor: 'rgb(24, 158, 91)', level: 'Advanced'},
-        {percentage: 50, skill: 'Java', bgColor: 'rgb(26, 95, 185)', level: 'Intermediate'},
-        {percentage: 70, skill: 'JavaScript', bgColor: 'rgb(24, 158, 91)', level: 'Advanced'},
-        {percentage: 55, skill: 'Python', bgColor: 'rgb(196, 183, 2)', level: 'Advanced'},
-        {percentage: 60, skill: 'React', bgColor: 'rgb(24, 158, 91)', level: 'Advanced'},
-        {percentage: 55, skill: 'Node.js', bgColor: 'rgb(24, 158, 91)', level: 'Intermediate'},
-        {percentage: 45, skill: 'AWS', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},
-        {percentage: 35, skill: 'Docker', bgColor: 'rgb(196, 134, 0)', level: 'Experience'},
-        {percentage: 55, skill: 'MySQL', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},
-        {percentage: 55, skill: 'SQL Server', bgColor: 'rgb(196, 134, 0)', level: 'Intermediate'},
-        
-    ];
+    // Get skills list 
+    useEffect(() => {
+        fetch(`myself/skills`)
+        .then(res => res.json())
+        .then(data => 
+            data.map((item, index) => {
+            setSkillList(skillList => skillList.concat(item))
+        })
+        )
+        console.log("list: ", skillList)
+    }, [])
     
     return (
         <div className='myself-title'>
@@ -65,10 +61,10 @@ function Myself() {
                 
                     <h5>SKILLS</h5>
                     <div className='skill-bar'>
-                        {abilityList.map((v, i) => (
+                        {skillList.map((v, i) => (
                         <>
                         <p>{v.skill}</p>
-                        <ProgressBar className='progress-bar' key={i} percentage={v.percentage} bgColor={v.bgColor} level={v.level}/>
+                        <ProgressBar className='progress-bar' key={i} percentage={v.percentage} bgColor={v.bgcolor} level={v.level}/>
                         </>
                         ))}
                     </div>

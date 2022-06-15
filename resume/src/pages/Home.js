@@ -1,4 +1,3 @@
-import { auto } from '@popperjs/core';
 import React from 'react';
 import background from '../images/leaf-background.png'
 import '../stylesheets/home.css'

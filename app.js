@@ -9,9 +9,9 @@ const cors = require('cors')
 const timeout = require('connect-timeout')
 const app = express()
 
-var surveyRouter = require('./routes/survey/survey');
-var emailRouter = require('./routes/survey/contact');
-var repoRouter = require('./routes/survey/github');
+var emailRouter = require('./routes/contact');
+var repoRouter = require('./routes/github');
+var skillsRouter = require('./routes/skills')
 
 app.use(timeout('30s'))
 //use dev format for log
@@ -28,9 +28,9 @@ app.use(cookieParser());
 
 
 
-// app.use('/', surveyRouter);
 app.use('/email', emailRouter);
-app.use('/repo', repoRouter)
+app.use('/repo', repoRouter);
+app.use('/myself', skillsRouter)
 
 // serve static assets if in production
 if(process.env.NODE_ENV === 'production'){
