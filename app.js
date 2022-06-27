@@ -11,7 +11,7 @@ const app = express()
 
 var emailRouter = require('./routes/contact');
 var repoRouter = require('./routes/github');
-var skillsRouter = require('./routes/skills')
+var myselfRouter = require('./routes/skills')
 
 app.use(timeout('30s'))
 //use dev format for log
@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 app.use('/email', emailRouter);
 app.use('/repo', repoRouter);
-app.use('/myself', skillsRouter)
+app.use('/myself', myselfRouter);
 
 // serve static assets if in production
 if(process.env.NODE_ENV === 'production'){

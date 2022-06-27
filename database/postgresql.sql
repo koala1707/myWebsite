@@ -33,10 +33,35 @@ VALUES
 (65, 'CSS', 'rgb(24, 158, 91)', 'Advanced'),
 (50, 'Java', 'rgb(26, 95, 185)', 'Intermediate'),
 (70, 'JavaScript', 'rgb(24, 158, 91)', 'Advanced'),
-(55, 'Python', 'rgb(196, 183, 2)', 'Advanced'),
+(55, 'Python', 'rgb(196, 183, 2)', 'Intermediate'),
 (60, 'React.js', 'rgb(24, 158, 91)', 'Advanced'),
 (55, 'Node.js', 'rgb(24, 158, 91)', 'Intermediate'),
 (45, 'AWS', 'rgb(196, 134, 0)', 'Intermediate'),
 (35, 'Docker', 'rgb(196, 134, 0)', 'Experience'),
 (55, 'MySQL', 'rgb(196, 134, 0)', 'Intermediate'),
 (55, 'SQL Server', 'rgb(196, 134, 0)', 'Intermediate');
+
+
+
+DROP table if exists details;
+CREATE TABLE details (
+	details_id SERIAL primary key,
+	title varchar(255) NOT NULL,
+	description varchar(255) NOT NULL,
+    category varchar(255) NOT NULL
+);
+INSERT INTO details (title, description,category)
+VALUES
+('• Monitoring working hours for engineers in GAS','Created programming to manage programmers’ working hours in google spreadsheet using Google Apps Scripts (GAS)','AI travel'),
+('• Monitoring AWS cost with Slack and Google spreadsheet','Created programming to send AWS services cost to Slack and google spreadsheet. Allowing managers to monitor cost movement every six hours with AWS Lambda in Python. (GAS in JavaScript)','AI travel'),
+('• Displaying the latest flight information with API','Created programming to extract data from database in Ruby with MySQL', 'AI travel'),
+('• Involved in installing a new financial system for the entire company','uccussed to introduce and install new system to all subsidiaries', 'NTN corporation'),
+('• Tax documents','Declared of consumption tax document', 'NTN corporation'),
+('Tresurer','I''m responsible for managing finance for Univerisity of South Australia Ultimate Club since 2020.','volunteers'),
+('Ambassador','I am responsible for managing the finance of Univerisity of South Australia Ultimate Club since 2020. I have knowledge to manage expend','volunteers'),
+('Multi cultures', 'I have met many people at Univeristy and talked thier background and thoughts. It was interested in knowing new ideas I have never thought on that way. ', 'Interest'),
+('Hiking & Running', 'I have done hiking and running since I was a kid. It makes me refreshed and I can do whenever I want.', 'Interest'),
+('Ultimate frisbee', 'I have started playing ultimate frisbee since I came to Australia. I wanted to begin a sport I have not played before. I have met many people through the sport and improve my communication skill.', 'Interest'),
+('Traveling', 'I love travelling around the world. I have been to USA, Phillipines, Malaysia, Thailand, Taiwan, New zealand, South Korea so far. I would like to travel more in the future.', 'Interest')
+;
+
