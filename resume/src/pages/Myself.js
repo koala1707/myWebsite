@@ -61,14 +61,11 @@ function Myself() {
                 }}
             >
                 <h1>Erika Hosokawa</h1>
-                <h5 className='sub-title'>Entry Software Engineer</h5>
+                <h5 className='sub-title'>Juniro Software Engineer/Developer</h5>
                 <div className='d-flex justify-content-around buttons'>
                     <button onClick={toHome}><p>HOME</p></button>
                     <button onClick={toPortfolio}><p>PORTFOLIO</p></button>
                     <button onClick={toContact}><p>CONTACT</p></button>
-                    {/* <button onClick={toHome}>HOME</button> */}
-                    {/* <button onClick={toPortfolio}>PORTFOLIO</button> */}
-                    {/* <button onClick={toContact}>CONTACT</button> */}
                 </div>
             </div>
             <div className="myself-home">
@@ -100,32 +97,39 @@ function Myself() {
                 </div>
 
                 <div className='right-side'>
-                    <p className='mysummary'>I have experience working in IT industry as an intern with collaborating team work and excellent communication skills. Well developed ability to remain calm in stressful situations and mediate positive solutions.<br/> Creative and analytical problem solver. Patient, empathic, independent, and willing to learn new skills. Currently studying my final year in Bachelor of Information Technology, majoring in Software Development</p>
+                    <p className='mysummary'>I have experience working in IT as an intern, collaborating with a team and I've developed excellent communication skills through this. <br/>I have a well developed ability to remain calm in stressful situations and produce positive solutions. Creative and analytical problem solver. Patient, empathic, independent, and willing to learn new skills. Currently studying my final year in Bachelor of Information Technology, majoring in Software Development.</p>
                     <h3>Work Experience</h3>
                     <h4>AI Travel<h7><GoCalendar className='icon-size'/> July 2021 ~ Current</h7></h4>
-                    
                     <h5>Responsibilities</h5>
-                    <p>• Assist developers to extract data from database using MySQL</p>
-                    <p>• Develop the application on Docker</p>
-                    <h5>Achievement</h5>
-                    <p onClick={() => getDetails(1)} className='showPopup'>• Monitoring working hours for engineers in GAS</p>
-                    <p onClick={() => getDetails(2)} className='showPopup'>• Monitoring AWS cost with Slack and Google spreadsheet</p>
-                    <p onClick={() => getDetails(3)} className='showPopup'>• Displaying the latest flight information with API</p>
+                    <p>- Assist developers with extracting data from database using MySQL</p>
+                    <p>- Develop the application on Docker</p>
+                    <h5>Achievements</h5>
+                    <div className='showPopup'>
+                        <button onClick={() => getDetails(1)}>• Monitoring working hours on google spreadsheet</button><br/>
+                        <button onClick={() => getDetails(2)}>• Monitoring AWS costs with Slack and Google spreadsheet</button><br/>
+                        <button onClick={() => getDetails(3)}>• Displaying the latest flight information with an API</button>
+                    </div>
                     <h4>NTN Corporation<h7><GoCalendar className='icon-size'/> October 2014 ~ November 2019</h7></h4>
                     <h5>Responsibilities</h5>
-                    <p>• Manage a couple of junior staff</p>
-                    <p>• Create document for stakeholders with Excel, Word and PowerPoint</p>
-                    <h5>Achievement</h5>
-                    <p onClick={() => getDetails(4)} className='showPopup'>• Involved in installing a new financial system for the entire company</p>
-                    <p onClick={() => getDetails(5)} className='showPopup'>• Tax documents</p>
-                    <h3>Volunteers</h3>
-                    <p onClick={() => getDetails(6)} className='showPopup'>• University of South Australia Ultimate Treasurer 2020, 2021, 2022</p>
-                    <p onClick={() => getDetails(7)} className='showPopup'>• University Ambassador 2022</p>
+                    <p>- Managing several junior staff</p>
+                    <p>- Creating documents for stakeholders with Excel, Word and PowerPoint</p>
+                    <h5>Achievements</h5>
+                    <div className='showPopup'>
+                        <button onClick={() => getDetails(4)}>• Involved in installing a new financial system for the entire company</button><br/>
+                        <button onClick={() => getDetails(5)}>• Tax documents</button>
+                    </div>
+                    <h3>Volunteering</h3>
+                    <div className='showPopup'>
+                        <button onClick={() => getDetails(6)}>• University of South Australia Ultimate Treasurer 2020, 2021, 2022</button><br/>
+                        <button onClick={() => getDetails(7)}>• University Ambassador 2022</button>
+                    </div>
                     <h3>Interest</h3>
-                    <p onClick={() => getDetails(8)} className='showPopup'>• Multi Cultures</p>
-                    <p onClick={() => getDetails(9)} className='showPopup'>• Hiking</p>
-                    <p onClick={() => getDetails(10)} className='showPopup'>• Ultimate Frisbee</p>
-                    <p onClick={() => getDetails(11)} className='showPopup'>• Traveling</p>
+                    <div className='showPopup'>
+                        <button onClick={() => getDetails(8)}>• International Cultures</button>
+                        <button onClick={() => getDetails(9)}>• Hiking</button>
+                        <button onClick={() => getDetails(10)}>• Ultimate Frisbee</button>
+                        <button onClick={() => getDetails(11)}>• Traveling</button>
+                    </div>
                 </div>
                 <Popup trigger={showPopup} setTrigger={setShowPopup}><p>{detailsDescription}</p></Popup>
             <div>

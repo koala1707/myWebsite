@@ -33,12 +33,12 @@
 .buttons button {
     border: none;
     background-color: transparent;
-    font-family: monospace;
+    font-family: 'Georgia';
     position:relative;
     transition: all 0.5s ease 0s;
     cursor: pointer;
     letter-spacing: 2.6px;
-    font-size: 20px;
+    font-size: 17px;
     top: 13px;
 }
 
@@ -177,11 +177,15 @@
 }
 
 
-.showPopup {
+.showPopup button{
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 19px;
+    margin: 0 0 0 23px;
 }
 
-.showPopup:hover {
+.showPopup button:hover {
     color: rgb(19, 132, 57);
 }
 
