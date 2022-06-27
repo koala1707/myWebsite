@@ -52,16 +52,16 @@ CREATE TABLE details (
 );
 INSERT INTO details (title, description,category)
 VALUES
-('• Monitoring working hours for engineers in GAS','Created programming to manage programmers’ working hours in google spreadsheet using Google Apps Scripts (GAS)','AI travel'),
-('• Monitoring AWS cost with Slack and Google spreadsheet','Created programming to send AWS services cost to Slack and google spreadsheet. Allowing managers to monitor cost movement every six hours with AWS Lambda in Python. (GAS in JavaScript)','AI travel'),
-('• Displaying the latest flight information with API','Created programming to extract data from database in Ruby with MySQL', 'AI travel'),
-('• Involved in installing a new financial system for the entire company','uccussed to introduce and install new system to all subsidiaries', 'NTN corporation'),
-('• Tax documents','Declared of consumption tax document', 'NTN corporation'),
-('Tresurer','I''m responsible for managing finance for Univerisity of South Australia Ultimate Club since 2020.','volunteers'),
-('Ambassador','I am responsible for managing the finance of Univerisity of South Australia Ultimate Club since 2020. I have knowledge to manage expend','volunteers'),
-('Multi cultures', 'I have met many people at Univeristy and talked thier background and thoughts. It was interested in knowing new ideas I have never thought on that way. ', 'Interest'),
-('Hiking & Running', 'I have done hiking and running since I was a kid. It makes me refreshed and I can do whenever I want.', 'Interest'),
-('Ultimate frisbee', 'I have started playing ultimate frisbee since I came to Australia. I wanted to begin a sport I have not played before. I have met many people through the sport and improve my communication skill.', 'Interest'),
-('Traveling', 'I love travelling around the world. I have been to USA, Phillipines, Malaysia, Thailand, Taiwan, New zealand, South Korea so far. I would like to travel more in the future.', 'Interest')
+('• Monitoring working hours for engineers in GAS','Created a program to manage working hours in google spreadsheet using Google Apps Scripts (GAS)','AI travel'),
+('• Monitoring AWS cost with Slack and Google spreadsheet','Created a program to send AWS service costs to Slack and google spreadsheet. This allows managers to monitor cost movement every six hours with AWS Lambda in Python. (GAS in JavaScript)','AI travel'),
+('• Displaying the latest flight information with API','Created a program to extract data from databases in Ruby with MySQL', 'AI travel'),
+('• Involved in installing a new financial system for the entire company','Succeeded in introducing and installing a new system with all subsidiaries', 'NTN corporation'),
+('• Tax documents','Declared consumption taxes for multiple branches', 'NTN corporation'),
+('Tresurer','I''ve been responsible for managing the finance of University of South Australia Ultimate Club since 2020. I''ve gained knowledge of managing expenditure and revenue.','volunteering'),
+('Ambassador','I''m preparing to join this project in 2022 as my professor recommended me. I''ll provide a testimonial of my experiences throughout university.','volunteering'),
+('International cultures', 'I have met many people from different countries at University and discussed their background and thoughts. I enjoy exploring new ideas brought through different life experiences.', 'Interest'),
+('Hiking & Running', 'I have been hiking and running since I was a kid. It refreshes me  and it''s easy for me to find time for.', 'Interest'),
+('Ultimate frisbee', 'I started playing ultimate frisbee when I arrived in Australia. I wanted to try a sport I hadn''t played before. I have met many people through it and it''s improved my communication skills and teamwork.', 'Interest'),
+('Traveling', 'I love travelling around the world. I have been to the US, Phillipines, Malaysia, Thailand, Taiwan, New Zealand and South Korea so far. I look forward to opportunities to travel in the future.', 'Interest')
 ;
 

@@ -61,7 +61,7 @@ function Myself() {
                 }}
             >
                 <h1>Erika Hosokawa</h1>
-                <h5 className='sub-title'>Juniro Software Engineer/Developer</h5>
+                <h5 className='sub-title'>Junior Software Engineer/Developer</h5>
                 <div className='d-flex justify-content-around buttons'>
                     <button onClick={toHome}><p>HOME</p></button>
                     <button onClick={toPortfolio}><p>PORTFOLIO</p></button>
@@ -98,6 +98,7 @@ function Myself() {
 
                 <div className='right-side'>
                     <p className='mysummary'>I have experience working in IT as an intern, collaborating with a team and I've developed excellent communication skills through this. <br/>I have a well developed ability to remain calm in stressful situations and produce positive solutions. Creative and analytical problem solver. Patient, empathic, independent, and willing to learn new skills. Currently studying my final year in Bachelor of Information Technology, majoring in Software Development.</p>
+                    
                     <h3>Work Experience</h3>
                     <h4>AI Travel<h7><GoCalendar className='icon-size'/> July 2021 ~ Current</h7></h4>
                     <h5>Responsibilities</h5>
@@ -129,6 +130,9 @@ function Myself() {
                         <button onClick={() => getDetails(9)}>• Hiking</button>
                         <button onClick={() => getDetails(10)}>• Ultimate Frisbee</button>
                         <button onClick={() => getDetails(11)}>• Traveling</button>
+                    </div>
+                    <div className='dot-details'> 
+                        <p>* • dot lines have more details</p>
                     </div>
                 </div>
                 <Popup trigger={showPopup} setTrigger={setShowPopup}><p>{detailsDescription}</p></Popup>
