@@ -44,7 +44,6 @@ function Myself() {
     // Get job achievement details from db
     const getDetails = (index) => {
         setShowPopup(true);
-        // setJobDetailsIndex(e)
         fetch(`myself/details/${index}`)
         .then(res => res.json())
         .then(data => setDetailsDescription(data[0].description))
@@ -57,16 +56,19 @@ function Myself() {
                     backgroundImage: `url(${Titlebg})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
-                    height: '25vh',
+                    height: '15%',
                     width: '98vw',
                 }}
             >
                 <h1>Erika Hosokawa</h1>
                 <h5 className='sub-title'>Entry Software Engineer</h5>
                 <div className='d-flex justify-content-around buttons'>
-                    <button onClick={toHome}>HOME</button>
-                    <button onClick={toPortfolio}>PORTFOLIO</button>
-                    <button onClick={toContact}>CONTACT</button>
+                    <button onClick={toHome}><p>HOME</p></button>
+                    <button onClick={toPortfolio}><p>PORTFOLIO</p></button>
+                    <button onClick={toContact}><p>CONTACT</p></button>
+                    {/* <button onClick={toHome}>HOME</button> */}
+                    {/* <button onClick={toPortfolio}>PORTFOLIO</button> */}
+                    {/* <button onClick={toContact}>CONTACT</button> */}
                 </div>
             </div>
             <div className="myself-home">
@@ -107,14 +109,8 @@ function Myself() {
                     <p>• Develop the application on Docker</p>
                     <h5>Achievement</h5>
                     <p onClick={() => getDetails(1)} className='showPopup'>• Monitoring working hours for engineers in GAS</p>
-                    
-
                     <p onClick={() => getDetails(2)} className='showPopup'>• Monitoring AWS cost with Slack and Google spreadsheet</p>
-
                     <p onClick={() => getDetails(3)} className='showPopup'>• Displaying the latest flight information with API</p>
-
-                    
-                    
                     <h4>NTN Corporation<h7><GoCalendar className='icon-size'/> October 2014 ~ November 2019</h7></h4>
                     <h5>Responsibilities</h5>
                     <p>• Manage a couple of junior staff</p>

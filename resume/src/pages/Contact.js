@@ -1,8 +1,10 @@
 import React from 'react';
 import '../stylesheets/contact.css'
 import { useState, useEffect } from 'react'
+import {useNavigate} from 'react-router-dom'
 
 function Contact() {
+    const navigate = useNavigate();
     const [eMail, setEMail] = useState({
         company: "",
         name: "",
@@ -13,6 +15,10 @@ function Contact() {
 
     const [sentEmail, setSentEmail] = useState()
     const [filledIn, setFilledIn] = useState()
+    
+    const toHome = () => {
+        navigate('/')
+    }
 
     useEffect(() => {
         if(eMail.name === '' || eMail.email === ''){
@@ -63,6 +69,10 @@ function Contact() {
                 
                 <button onClick={filledIn ? receiveEmail : ''}>Submit</button>
                 <div className='sent-email'>{sentEmail ? 'Sent your message. Thank you.' : ''}</div>
+                
+            </div>
+            <div className='to-home'>
+                <button onClick={toHome} ><p>Home</p></button>
             </div>
         </div>
     )
