@@ -100,7 +100,16 @@ function Myself() {
                     <p className='mysummary'>I have experience working in IT as an intern, collaborating with a team and I've developed excellent communication skills through this. <br/>I have a well developed ability to remain calm in stressful situations and produce positive solutions. Creative and analytical problem solver. Patient, empathic, independent, and willing to learn new skills. Currently studying my final year in Bachelor of Information Technology, majoring in Software Development.</p>
                     
                     <h3>Work Experience</h3>
-                    <h4>AI Travel<h7><GoCalendar className='icon-size'/> July 2021 ~ Current</h7></h4>
+                    <h4>PAC Blockchain<h7><GoCalendar className='icon-size'/> July 2022 ~ October 2022</h7></h4>
+                    <h5>Responsibilities</h5>
+                    <p>- Contribute to building Rest APIs with Swagger</p>
+                    <h5>Achievements</h5>
+                    <div className='showPopup'>
+                        <button onClick={() => getDetails(12)}>• Creating Rest APIs with Swagger in Python</button><br/>
+                        <button onClick={() => getDetails(13)}>• Creating an email notification with Python and HTML</button><br/>
+                        <button onClick={() => getDetails(14)}>• Testing code in pytest', 'After creating functions</button>
+                    </div>
+                    <h4>AI Travel<h7><GoCalendar className='icon-size'/> July 2021 ~ July 2022</h7></h4>
                     <h5>Responsibilities</h5>
                     <p>- Assist developers with extracting data from database using MySQL</p>
                     <p>- Develop the application on Docker</p>
