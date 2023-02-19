@@ -107,7 +107,7 @@ function Myself() {
                     <div className='showPopup'>
                         <button onClick={() => getDetails(12)}>• Creating Rest APIs with Swagger in Python</button><br/>
                         <button onClick={() => getDetails(13)}>• Creating an email notification with Python and HTML</button><br/>
-                        <button onClick={() => getDetails(14)}>• Testing code in pytest'</button>
+                        <button onClick={() => getDetails(14)}>• Testing code in pytest</button>
                     </div>
                     <h4>AI Travel<h7><GoCalendar className='icon-size'/> July 2021 ~ July 2022</h7></h4>
                     <h5>Responsibilities</h5>
